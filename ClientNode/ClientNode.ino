@@ -31,6 +31,7 @@ struct payload_t {
 
 uint32_t displayTimer = 0;
 void setup() {
+    Serial.println(F("Initializing"));
   lcd.begin(16,2);
   lcd.init();                      // initialize the lcd 
   lcd.backlight();
